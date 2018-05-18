@@ -1,0 +1,59 @@
+{
+  "name": "nuxt-thinkjs-demo",
+  "description": "nuxtjs for thinkjs3",
+  "version": "1.0.0",
+  "author": "baisheng@gmail.com <baisheng@gmail.com>",
+  "scripts": {
+    "start": "node development.js",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
+    "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0",
+    "think-cache": "^1.0.0",
+    "think-cache-file": "^1.0.8",
+    "think-logger3": "^1.0.0",
+    "think-model": "^1.0.0",
+    "think-model-mysql": "^1.0.0",
+    "think-session": "^1.0.0",
+    "think-session-file": "^1.0.5",
+    "think-view": "^1.0.0",
+    "think-view-nunjucks": "^1.0.1",
+    "thinkjs": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.18.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-think-node": "^1.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-notifier": "^5.0.2",
+    "nyc": "^7.0.0",
+    "think-babel": "^1.0.3",
+    "think-inspect": "0.0.2",
+    "think-watcher": "^3.0.0"
+  },
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "readmeFilename": "README.md",
+  "thinkjs": {
+    "metadata": {
+      "name": "nuxt-thinkjs-demo",
+      "description": "nuxtjs for thinkjs3",
+      "author": "baisheng@gmail.com <baisheng@gmail.com>",
+      "babel": true
+    },
+    "projectName": "nuxt-thinkjs-demo",
+    "template": "/Users/basil/.nvm/versions/node/v8.9.0/lib/node_modules/think-cli/default_template",
+    "clone": false,
+    "isMultiModule": false
+  }
+}
