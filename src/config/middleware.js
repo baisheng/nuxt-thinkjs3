@@ -1,7 +1,5 @@
 const path = require('path');
 const isDev = think.env === 'development';
-const nuxt = require('../middleware/nuxt')
-
 module.exports = [
   {
     handle: 'meta',
@@ -33,10 +31,10 @@ module.exports = [
     handle: 'router',
     options: {}
   },
+  'logic',
+  'controller',
   {
     handle: 'nuxt',
     options: {}
   },
-  'logic',
-  'controller'
 ];
