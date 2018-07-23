@@ -45,7 +45,7 @@ pm2 startOrReload pm2.json
 
 
 
-## 常见问题
+## Tips
 ### 非 nuxt 资源的访问
 如果希望某些 controller 如 api 不被 nuxt 中间件拦截，请参考下面的代码修改 middleware
 ```javascript
