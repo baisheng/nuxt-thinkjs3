@@ -1,6 +1,7 @@
 const path = require('path');
+const config = require(path.join(think.ROOT_PATH, '/nuxt.js'))
 const isDev = think.env === 'development';
-const nuxt = require('../middleware/nuxt')
+const nuxt = require('think-nuxt')
 
 module.exports = [
   {
@@ -34,8 +35,12 @@ module.exports = [
     options: {}
   },
   {
-    handle: 'nuxt',
-    options: {}
+    handle: nuxt,
+    options: {
+      config: config,
+      unless: [/^\/api?/],
+      isDev: isDev
+    }
   },
   'logic',
   'controller'
